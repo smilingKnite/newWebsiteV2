@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" type="text/css" href="portfolio.css" />-->
+    <meta charset='utf-8' />
+    <title>Resumé</title>
+    {% load static %}
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="{% static 'webPortfolio/css/me.css' %}" media="screen" title="no title" charset="utf-8">
+    <style type='text/css'>
+        /* put styles here */
+
+        /* @import "../webPortfolio/css/nPortfolio.css"; */
+
+        .paper {
+            top: 20%;
+        }
+
+        .paper:hover {
+            background: linear-gradient(to top, whitesmoke, rgba(100, 100, 100, 0.514));
+        }
+
+        div.paper {
+            border-radius: 25px;
+            text-align: left;
+            width: 50%;
+            margin: 2em auto;
+            background: linear-gradient(to bottom, whitesmoke, rgba(100, 100, 100, 0.514));
+            padding: 2em;
+            height: 800px;
+            overflow: scroll;
+            color: black;
+        }
+
+        p.description {
+            text-align: center;
+            display: none;
+        }
+
+        div.header {
+            text-align: center;
+        }
+
+        .header h2 {
+            font-size: 30px;
+        }
+
+        .paper h2 {
+            text-align: center;
+        }
+
+        .sum {
+            text-align: center;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        /* width */
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Handle */
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background: linear-gradient(to bottom, hsla(0, 74%, 36%, 0.459), hsla(216, 58%, 52%, 0.432));
+        }
+
+        /* Handle on hover */
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, hsl(0, 73%, 36%), rgb(61, 118, 204));
+        }
+
+        ::-webkit-scrollbar-button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            background: rgba(121, 34, 202, 0.363);
+        }
+        h1 a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+    <!-- <script type='text/javascript' src='nContents.js'></script> -->
+</head>
+
+<body>
+    <h1><a href="/">Resumé</a></h1>
+
+    <div class='paper'>
+        <div class='header'>
+            <h2>Tyler Mondragon</h2>
+            <p class='phone'>
+                <p class="bold"> | 408-644-8379 | </p>
+            </p>
+            <p class='email'>
+                <p class="bold"> tydragon4@gmail.com</p>
+            </p>
+        </div>
+        <h2>Summary of Canidate</h2>
+        <p class="sum">
+            Aspiring and talented young illustrator and programmer with a passion for the creative technology, especially, creating sites,
+            applications, games, and illustrations. Innovative and ready to learn to produce or enhance any production on
+            the internet, on the big screen or in recreational projects. Demonstrated ability to learn and create new programs
+            and work trhought difficult situations. I am a hands-on learner and I love creating new and interesting things.
+        </p>
+
+
+        <h2>Education</h2>
+        <ul>
+            <li class="bold">Silicon Valley Career Technical Education 2015-2016</li>
+            <ul>
+                <li>Mobile App and Design - computer science program for iOS products</li>
+            </ul>
+            <li class="bold">JobTrain 2016</li>
+            <ul>
+                <li>Web Development Bootcamp</li>
+            </ul>
+            <li class="bold">High School Graduating - Class of 2016</li>
+            <ul>
+                <li>Los Gatos High School, Los Gatos, CA 95030</li>
+            </ul>
+            <li class="bold">CodingDojo 2018</li>
+            <ul>
+                <li>Trained in Javascript, python, Django, MEAN, Ruby, APIs, etc.</li>
+            </ul>
+        </ul>
+
+        <h2>Special Skills</h2>
+        <ul>
+            <li class="bold">Artistic Abilities</li>
+            <ul>
+                <li>Ability to create unique illustrations</li>
+                <li>Can adapt to new artistic tools</li>
+                <li>Ability to create storyboard art.</li>
+                <li> Web graphics, 2D and 3D modeling.</li>
+            </ul>
+            <li class="bold">Photography</li>
+            <ul>
+                <li>Ability to create long exposure shots in a multitude of settings</li>
+                <li>Can photograph anything from landscapes to portrait head-shots</li>
+                <li>Able demonstrate a good understanding of DSLR camaras</li>
+            </ul>
+            <li class="bold">Musician</li>
+            <ul>
+                <li>Ability to play drums</li>
+                <li>Can play guitar</li>
+                <li>Able to sing </li>
+            </ul>
+            <li class="bold">Computers</li>
+            <ul>
+                <li>Ability to create websites and pages</li>
+                <li>Can create programs for tasks</li>
+                <li>Able to create unique projects</li>
+            </ul>
+        </ul>
+
+
+        <h2>Interests</h2>
+        <p class="sum">
+            I'm interested in technology and how to improve it so that it may benefit us, as a planet, 
+            in the future. I enjoy building applications and using them in a creative way. I could build
+            an entirely skeletal version of a website and yet I will always want to make it better.
+            I enjoy programming, it's almost like drawing in the sense that you create something original
+             yet always be able to change it and make it better than you could have first thought. 
+        </p>
+            <p class="sum">
+                As for my creative art side, from zany cartoons to intense action or horror sequences, 
+                I see something creative and surreal that I can create both in art and technology. 
+                I use these thoughts as inspiration for when things are dull. 
+                I see something creative or humorous in almost everything. 
+                I used my imagination to create funny stories. 
+                Just picturing what could be created and how funny things would look like when I image my art. 
+                This is when art is most interesting to me.
+            </p>
+       
+    </div>
+
+    </p>
+    <p class='description'>
+        Creating a resume with HTML code using Xcode.
+    </p>
+    <div id='nav'>
+    </div>
+
+    <div id='footer'>
+        Copyright &copy; Tyler Mondragon 2016
+    </div>
+
+    <script type='text/javascript'>
+        makeNav();
+    </script>
+
+
+
+
+</body>
+
+
+
+</html>

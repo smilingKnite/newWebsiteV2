@@ -1,0 +1,163 @@
+html{
+  /* height: 100%; */
+  /* width: 100%; */
+}
+
+body{
+  background-color: black;
+  background-image: url('../img/background_test.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+}
+.design{
+  position: absolute;
+  max-height: 150px;
+  /*top: 25px;*/
+  left: 25px;
+  transition: 500ms;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge rgb(131, 4, 4);
+  border-radius: 15px;
+}
+
+.design:hover, .photo:hover, .work:hover, .about:hover {
+  box-shadow: 0 0 10px rgba(60, 105, 135, 0.9);
+  border-color: rgb(42, 156, 197);
+  transition: 200ms;
+}
+.TL:hover img.one {
+  transform: translateX(10px) rotate(-20deg);
+}
+
+.TL:hover img.two {
+  transform: translateX(150px) rotate(-15deg);
+}
+
+.TL:hover img.three {
+  transform: translateX(280px) rotate(-10deg);
+}
+
+.photo {
+  position: absolute;
+  max-height: 150px;
+  /*top: 25px;*/
+  left: 85%;
+  transition: 400ms;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge darkred;
+  border-radius: 15px;
+}
+.TR:hover img.one {
+  transform: translateX(-10px) rotate(20deg);
+}
+
+.TR:hover img.two {
+  transform: translateX(-150px) rotate(15deg);
+}
+
+.TR:hover img.three {
+  transform: translateX(-280px) rotate(10deg);
+}
+.glare {
+  opacity: 1;
+}
+
+.boxT  {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 25%;
+}
+.work {
+  position: absolute;
+  max-height: 150px;
+  /*top: 90%;*/
+  /*bottom: 25px;*/
+  left: 25px;
+  transition: 500ms;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge darkred;
+  border-radius: 15px;
+}
+
+.about {
+  position: absolute;
+  max-height: 150px;
+  /*top: 70%;*/
+  /*bottom: 25px;*/
+  left: 85%;
+  transition: 500ms;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge darkred;
+  border-radius: 15px;
+}
+.BL:hover img.one {
+  transform: translateX(10px) translateY(-20px) rotate(-20deg);
+}
+
+.BL:hover img.two {
+  transform: translateX(150px) translateY(-20px) rotate(-15deg);
+}
+
+.BL:hover img.three {
+  transform: translateX(280px) translateY(-20px) rotate(-10deg);
+}
+.BR:hover img.one {
+  transform: translateX(-10px) translateY(-20px) rotate(20deg);
+}
+
+.BR:hover img.two {
+  transform: translateX(-150px) translateY(-20px) rotate(15deg);
+}
+
+.BR:hover img.three {
+  transform: translateX(-280px) translateY(-20px) rotate(10deg);
+}
+svg {
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+}
+
+@keyframes moveE {
+  0% {transform: rotateX(0deg) rotateY(0deg);}
+
+  10% {transform: translateY(50px) rotateX(40deg) rotateY(20deg) rotateZ(-1deg);}
+
+  20% {transform: translateX(65px) translateY(50px) rotateY(-15deg) rotateX(15deg) rotateZ(-2deg) ;}
+
+  30% {transform: rotateX(-10deg) rotateY(20deg) rotateZ(2deg);}
+  35% {transform: translateY(10px) translateX(0px) rotateY(-5deg) rotateX(-35deg) rotateZ(2deg);}
+  40% {transform: translateY(10px) translateX(0px) rotateY(-5deg) rotateX(-35deg) rotateZ(2deg);}
+
+  50% {transform:  rotateY(-25deg) rotateX(-30deg) rotateZ(2deg) ;}
+  55% {transform: translateX(65px) translateY(50px) rotateY(-15deg) rotateX(15deg) rotateZ(-2deg) ;}
+  60% {transform: rotateX(0deg) rotateY(0deg);}
+  
+  70% {transform: rotateX(-10deg) rotateY(20deg) rotateZ(2deg);}
+
+  80% {transform: translateY(10px) translateX(0px) rotateY(-5deg) rotateX(-35deg) rotateZ(2deg);}
+
+  90% {transform:  rotateY(-25deg) rotateX(-30deg) rotateZ(2deg) ;}
+
+  100% {transform: rotateX(0deg) rotateY(0deg);}
+}
+.newEE {
+  animation: moveE 4s 0s infinite ease-in-out;
+}
+
+footer {
+  color: white;
+  position: absolute;
+  /* bottom: 1px; */
+  /* margin: 10px auto; */
+}

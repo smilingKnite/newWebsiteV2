@@ -1,0 +1,89 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: black;
+  background-image: url('../img/backgroundAndBaby.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.photos:hover {
+  box-shadow: 0 0 10px rgba(60, 105, 135, 0.9);
+  border-color: #1AA0D1;
+}
+.photos {
+  position: absolute;
+  max-height: 150px;
+  /*top: 25px;*/
+  left: 44%;
+  transition: 500ms;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge darkred;
+  border-radius: 15px;
+}
+.rowImg:hover img.two {
+  transform: translateY(165px) rotate(-360deg);
+  transition: 400ms;
+}
+
+.rowImg:hover img.three {
+  transform: translateY(330px) rotate(360deg);
+  transition: 400ms;
+}
+.rowImg:hover img.one {
+  transform: rotate(-180deg);
+  transition: 400ms;
+}
+.list {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin-top: 40px;
+  z-index: 1;
+}
+.list img.photos {
+  height: 150px;
+}
+
+footer {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  background: linear-gradient(to right, #1AA0D1, darkred);
+  width: 250px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px double darkred;
+}
+
+/* .taf  {
+  width: 350px;
+  margin: auto;
+  visibility: hidden;
+}
+.taff  {
+  width: 350px;
+  margin: 10px auto;
+  z-index: 2;
+  visibility: visible;
+} */
+.taf  {
+  height: 350px;
+  margin: 10px auto;
+  visibility: hidden;
+  z-index: 2;
+}
+.taff  {
+  visibility: visible;
+}

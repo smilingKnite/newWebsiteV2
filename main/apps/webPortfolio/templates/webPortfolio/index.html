@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smiling Knite</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  {% load static %}
+  <!-- <link rel="stylesheet" href="{# media 'webPortfolio/css/main.css' #}" media="screen" title="no title" charset="utf-8"> -->
+  <link rel="stylesheet" href="{% static 'webPortfolio/css/main.css' %}" media="screen" title="no title" charset="utf-8">
+  
+
+</head>
+
+<body>
+
+  <div class=" box">
+    <div class="TR ">
+      <a href="/photos">
+        <img class="photo three" src="{% static 'webPortfolio/img/bankseyMonkey_box.png' %}" alt="sparks">
+        <img class="photo two" src="{% static 'webPortfolio/img/resume_box.jpg' %}" alt="izz">
+        <img class="photo one" src="{% static 'webPortfolio/img/sparks_box.jpg' %}" alt="sparks">
+      </a>
+    </div>
+  
+    <div class="TL ">
+      <a href="/designs">
+        <img class="design three" src="{% static 'webPortfolio/img/rick_box.png' %}" alt="Rick Sanches">
+        <img class="design two" src="{% static 'webPortfolio/img/spiderman_box.png' %}" alt="Spidy">
+        <img class="design one" src="{% static 'webPortfolio/img/geoffry_box.png' %}" alt="Geff">
+      </a>
+    </div>
+  </div>
+
+
+  <svg width="800" height="800" viewbox="0 0 1000 1000">
+    <defs>
+
+      <radialgradient id="all" cx=".25" cy=".15" r=".50" opacity="">
+        <stop offset="40%" stop-color="white" stop-opacity="1" />
+        <stop offset="100%" stop-color="black" />
+      </radialgradient>
+
+      <clippath id="half">
+        <rect x="450" y="350" height="100" width="50" />
+      </clippath>
+
+      <clippath id="animation">
+        <circle cx="500" cy="400" r="100" fill="none" />
+      </clippath>
+
+      <clippath id="puple">
+        <circle cx="500" cy="400" r="15" fill="black" />
+      </clippath>
+      <!-- here to change the eyes shading -->
+      <radialgradient id="gray" cx=".45" cy=".35" r=".80">
+        <stop offset="40%" stop-color="transparent" />
+        <stop offset="100%" stop-color="black" />
+      </radialgradient>
+      <!-- <radialgradient id="Ngray" cx=".45" cy=".25" r=".50">
+            <stop offset="20%" stop-color="white"/>
+            <stop offset="100%" stop-color="transparent"/>
+        </radialgradient> -->
+      <!-- WORKING RIGHT HERE MAKING THE DOT TRANSPARENT WHITE SOMEHOW -->
+      <radialgradient id="graAy" cx=".5" cy=".5" r="1.8">
+        <stop offset="15%" stop-color="white" />
+        <stop offset="100%" stop-color="transparent" />
+      </radialgradient>
+
+      <radialgradient id="blue" cx=".5" cy=".50" r=".50">
+        <stop offset="40%" stop-color="#1286FA" />
+        <stop offset="100%" stop-color="#083869" />
+      </radialgradient>
+
+      <radialgradient id="red" cx=".5" cy=".5" r=".50">
+        <stop offset="40%" stop-color="#BD0104" />
+        <stop offset="100%" stop-color="#5E0002" />
+      </radialgradient>
+
+      <radialgradient id="black" cx=".25" cy=".15" r=".50">
+        <stop offset="40%" stop-color="white" />
+        <stop offset="100%" stop-color="black" />
+      </radialgradient>
+
+      <radialgradient id="back" cx=".40" cy=".25" r=".59">
+        <stop offset="60%" stop-color="white" />
+        <stop offset="100%" stop-color="black" />
+      </radialgradient>
+
+      <radialgradient id="newB" cx=".40" cy=".25" r=".59">
+        <stop offset="60%" stop-color="white" />
+        <stop offset="100%" stop-color="white" />
+      </radialgradient>
+    </defs>
+
+    <g transform="translate(-400 -300) scale(1.5)">
+      <!--eye -->
+      <g transform="translate(-350 -300) scale(1.9)">
+        <circle fill="url(#newB)" cx="500" cy="400" r="99" />
+        <g clip-path="url(#animation)" fill="url(#gray)">
+          <!--this controls the speed of the eye-->
+          <g class="newEE">
+            <!-- <g transform="translate(-225 -250)" > -->
+            <circle cx="500" cy="400" r="45" fill="url(#red)" stroke="#191919" stroke-width="1"></circle>
+            <circle class="bluE" cx="500" cy="400" r="45" fill="url(#blue)" stroke="#191919" stroke-width="1" clip-path="url(#half)"></circle>
+            <line x1="500" x2="500" y1="355" y2="445" stroke="#191919" stroke-width=".25"></line>
+            <!-- <line x1="400" x2="600" y1="500" y2="500" stroke="#191919" stroke-width=".5"></line> -->
+            <circle cx="500" cy="400" r="100" fill="url(#black)" clip-path="url(#puple)"></circle>
+          </g>
+          <circle cx="500" cy="400" r="100" fill="url(#gray)" />
+          <!-- <circle cx="500" cy="400" r="100" fill="url(#Ngray)"/> -->
+        </g>
+      </g>
+    </g>
+  </svg>
+
+  <div class="boxT">
+    <div class="BL  ">
+      <a href="/work">
+        <img class="work three" src="{% static 'webPortfolio/img/adobe_box.png' %}" alt="Adobe Box">
+        <img class="work two" src="{% static 'webPortfolio/img/noiseMaker_box.png' %}" alt="Noise Maker">
+        <img class="work one" src="{% static 'webPortfolio/img/tickTackBrockenShack_box.png' %}" alt="Tic Tac Toe">
+      </a>
+    </div>
+
+    <div class="BR  ">
+      <a href="/me">
+        <img class="about three" src="{% static 'webPortfolio/img/resume_box.jpg' %}" alt="Resume">
+        <img class="about two" src="{% static 'webPortfolio/img/stenciledSeattle_box.png' %}" alt="Seattle Art">
+        <img class="about one" src="{% static 'webPortfolio/img/waffles_box.png' %}" alt="Waffles">
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    Copyright &copy; Tyler Mondragon 2016
+  </footer>
+  <!-- <a href="text.html">heere</a> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous"></script> -->
+
+  <!-- <script>
+    $(document).ready(function () {
+      // $('.design').mouseover(function() {
+      //   $('.TL .one').css({'transform':'translateX(0px) translateY(0px) rotate(deg) '});
+      //   $('.TL .two').css({'transform':'translateX(50px) translateY(-100px) rotate(15deg)', 'z-index': '-3'});
+      //   $('.TL .three').css({'transform':'translateX(0px) translateY(-380px) rotate(-4deg)'});
+      // }).mouseleave(function() {
+      //   $('.TL .one').css({'transform':'translateX(0px) translateY(0px) rotate(0deg)'});
+      //   $('.TL .two').css({'transform':'translateX(0px) translateY(0px) rotate(0deg)'});
+      //   $('.TL .three').css({'transform':'translateX(0px) translateY(380px) rotate(0deg)'});
+      // });
+
+    });
+
+  </script> -->
+
+
+</body>
+
+</html>

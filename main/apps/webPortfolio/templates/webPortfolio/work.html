@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smiling Knite</title>
+  {% load static %}
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script> {% load static %}
+  <!-- <link rel="stylesheet" href="{# media 'webPortfolio/css/main.css' #}" media="screen" title="no title" charset="utf-8"> -->
+  <link rel="stylesheet" href="{% static 'webPortfolio/css/photo.css' %}" media="screen" title="no title" charset="utf-8">
+  
+
+  <script>
+    $(document).ready(function () {
+      $('.list ').click(function () {
+        $('.taf').toggleClass('taff');
+
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <a href="/">
+      <h1>Projects</h1>
+    </a>
+  </header>
+
+  <div class="list ">
+    <div class="rowImg">
+
+      <img class="photos three" src="{% static 'webPortfolio/img/tickTackBrockenShack_box.png' %}" alt="Izzy the Bulldog">
+      <img class="photos two" src="{% static 'webPortfolio/img/noiseMaker_box.png' %}" alt="Waffles!">
+      <img class="photos one" src="{% static 'webPortfolio/img/adobe_box.png' %}" alt="Long Exposure">
+    </div>
+  </div>
+
+  <div class="taf ">
+    <img src="{% static 'webPortfolio/img/thatsAllFolks.gif' %}"></img>
+  </div>
+
+  <footer>
+    <p>Copyright &copy; Tyler Mondragon 2016</p>
+  </footer>
+
+
+</body>
+
+</html>

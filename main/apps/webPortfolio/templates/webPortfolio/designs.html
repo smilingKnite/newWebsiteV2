@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>V01Ds Pictures</title>
+  {% load static %}
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <link rel="stylesheet" href="{% static 'webPortfolio/css/design.css' %}" media="screen" title="no title" charset="utf-8">
+  <script>
+    $(document).ready(function () {
+      $('.list ').click(function () {
+        $('.taf').toggleClass('taff');
+      });
+      $('.list>.rowImg .photos').click(function () {
+        $('.taf').toggleClass('taff');
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <h1>
+      <a href="/">Designs</a>
+    </h1>
+  </header>
+
+  <div class=" list ">
+    <div class="rowImg">
+      <img class="photos photosI three" src="{% static 'webPortfolio/img/bankseyMonkey_box.png' %}" alt="Banksey Inspired">
+      <img class="photos photosI two" src="{% static 'webPortfolio/img/waffles_box.png' %}" alt="Waffles!">
+      <img class="photos photosI one" src="{% static 'webPortfolio/img/deadAstronaut_box.png' %}" alt="Dead Astronaut">
+    </div>
+    <!-- </div>
+br
+  <div class="listII list "> -->
+    <div class="rowImg ">
+      <img class="photos photosII three" src="{% static 'webPortfolio/img/deadByPineapple_box.png' %}" alt="Dead Pineapple">
+      <img class="photos photosII two" src="{% static 'webPortfolio/img/dreamState_box.png' %}" alt="A Dream I Had">
+      <img class="photos photosII one" src="{% static 'webPortfolio/img/geoffry_box.png' %}" alt="Geoffry the Muffin Monster">
+    </div>
+    <!-- </div> -->
+
+    <!-- <div class="listIII list "> -->
+    <div class="rowImgIII rowImg">
+      <img class="photos photosIII three" src="{% static 'webPortfolio/img/openedApple_box.png' %}" alt="Found Apple">
+      <img class="photos photosIII two" src="{% static 'webPortfolio/img/owlTattoo_box.png' %}" alt="A Design with an Owl">
+      <img class="photos photosIII one" src="{% static 'webPortfolio/img/personalSuicideSquad_box.png' %}" alt="Suicide Squad design">
+    </div>
+    <!-- </div> -->
+
+    <!-- <div class="listIV list "> -->
+    <div class="rowImg">
+      <img class="photos photosIV three" src="{% static 'webPortfolio/img/rick_box.png' %}" alt="RICK SANCHES! WUBBA-LUBBA-DUB-DUB! ">
+      <img class="photos photosIV two" src="{% static 'webPortfolio/img/spiderman_box.png' %}" alt="The Amazing Spiderman Logo">
+      <img class="photos photosIV one" src="{% static 'webPortfolio/img/stenciledSeattle_box.png' %}" alt="SEATTLE!">
+    </div>
+  </div>
+
+  <div class="taf ">
+    <img src="{% static 'webPortfolio/img/thatsAllFolks.gif' %}"></img>
+  </div>
+
+  <!-- four rows of three -->
+
+  <footer>
+    <p>Copyright &copy; Tyler Mondragon 2016</p>
+  </footer>
+
+</body>
+
+</html>

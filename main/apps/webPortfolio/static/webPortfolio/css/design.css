@@ -1,0 +1,127 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: black;
+  background-image: url('../img/backgroundAndBaby.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.photos:hover {
+  box-shadow: 0 0 10px rgba(60, 105, 135, 0.9);
+  border-color: #1AA0D1;
+  transition: 400ms;
+}
+.photosI {
+  position: absolute;
+  max-height: 150px;
+  /*top: 25px;*/
+  width: 150px;
+  transition: 400ms;
+  left: 25px;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge darkred;
+  border-radius: 15px;
+}
+.photosII {
+  position: absolute;
+  max-height: 150px;
+  /*top: 25px;*/
+  left: 30%;
+  transition: 400ms;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge darkred;
+  border-radius: 15px;
+}
+.photosIII {
+  position: absolute;
+  max-height: 150px;
+  /*top: 25px;*/
+  left: 60%;
+  transition: 400ms;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge darkred;
+  border-radius: 15px;
+}
+.photosIV {
+  position: absolute;
+  max-height: 150px;
+  /*top: 25px;*/
+  right: 25px;
+  transition: 400ms;
+  /*transform-origin: 50% 130%;*/
+  border: 5px ridge darkred;
+  border-radius: 15px;
+}
+.rowImg:hover img.two {
+  transform: translateY(180px) ;
+}
+
+.rowImg:hover img.three {
+  transform: translateY(360px) ;
+}
+.rowImg:hover img.one {
+  transform: rotate(-360deg);
+}
+.rowImgII:hover img.two {
+  transform: translateY(250px) rotate(-5deg);
+}
+
+.rowImgII:hover img.three {
+  transform: translateY(500px) rotate(5deg);
+}
+.rowImgII:hover img.one {
+  transform: rotate(5deg);
+}
+.rowImgIV:hover img.two {
+  transform: translateY(250px) rotate(-5deg);
+}
+
+.rowImgIV:hover img.three {
+  transform: translateY(500px) rotate(5deg);
+}
+.rowImgIV:hover img.one {
+  transform: rotate(5deg);
+}
+.list {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+}
+.list img.photos {
+  height: 205px;
+}
+
+footer {
+  color: white;
+  position: absolute;
+  vertical-align: bottom;
+  bottom: 10px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  background: linear-gradient(to right, darkred, #1AA0D1 );
+  width: 250px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px double darkred;
+}
+.taf  {
+  height: 350px;
+  margin: 10px auto;
+  visibility: hidden;
+  z-index: 2;
+}
+.taff  {
+  visibility: visible;
+}
